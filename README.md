@@ -1,6 +1,8 @@
 # learn-jenkins-deploy-springboot
-learn deployment springboot app using jenkins
+- learn deployment springboot app using jenkins
+- Medium article [https://deni-setiawan.medium.com/deploy-springboot-app-using-jenkins-11715ae68ec2](https://deni-setiawan.medium.com/deploy-springboot-app-using-jenkins-11715ae68ec2)
 
+Link :
 - [Stage Job](#stage)
 - [Jenkins Pipline](#jenkins-pipeline)
 
