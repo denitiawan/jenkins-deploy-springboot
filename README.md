@@ -51,7 +51,7 @@ node {
       
       
       // jika container belum dihapus dan maven sudah pernah download dependecie maka boleh aktifka mode offline
-     // sh "'${mvnHome}/bin/mvn' clean install -o"
+      //sh "'${mvnHome}/bin/mvn' clean install -o"
       
       // jika container telah dihapus dan dibuat ulang maka wajib untuk aktifkan maven mode online
       sh "'${mvnHome}/bin/mvn' clean install "
@@ -78,7 +78,7 @@ node {
         } 
         
          // create and run container
-         sh "docker run  --detach  --name deployed_springboot_by_jenkins  --publish 1234:1234 --network=server_network  -e APP_HOST=deployed_springboot_by_jenkins   -e APP_PORT=1234 -e APP_DB_HOST=server_mysql -e APP_DB_PORT=3300  -e APP_DB_USER=user -e APP_DB_PASSWORD=password -e APP_DB_NAME=database deployed_springboot_by_jenkins:${env.BUILD_NUMBER}"
+         sh "docker run  --detach  --name deployed_springboot_by_jenkins  --publish 1234:1234 --network=deployment_network  -e APP_HOST=deployed_springboot_by_jenkins   -e APP_PORT=1234 -e APP_DB_HOST=deployment_db_mysql -e APP_DB_PORT=3366  -e APP_DB_USER=user -e APP_DB_PASSWORD=password -e APP_DB_NAME=db_spring deployed_springboot_by_jenkins:${env.BUILD_NUMBER}"
       
       
     }
