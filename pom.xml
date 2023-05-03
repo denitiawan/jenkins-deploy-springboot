@@ -11,7 +11,7 @@
     <groupId>com.deni</groupId>
     <artifactId>app</artifactId>
     <version>0.1</version>
-    <name>restapi-springboot-Mysql</name>
+    <name>learn-jenkins-deploy-springboot</name>
     <description>Springboot RestAPI with Mysql</description>
     <properties>
         <java.version>1.8</java.version>
